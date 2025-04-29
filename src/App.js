@@ -1,16 +1,16 @@
 import "./App.css";
 import FAQ from "./components/FAQ";
 import Navbar from "./components/Navbar";
-import logo from "./assets/img/icons/nexterra.png";
+import logo from "./assets/img/icons/nexterra-white.png";
 
 function App() {
   return (
     <>
       <Navbar />
-
+    
       <div className="bg-gray-900 text-white font-sans">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-gradient-to-br from-gray-800 to-black">
+        <section className="py-20 md:py-32 bg-gradient-to-br from-purple-800 to-grey-600">
           <div className="container mx-auto text-center">
             <img src={logo} className="w-64 mx-auto mb-6" alt="logo" />
 
