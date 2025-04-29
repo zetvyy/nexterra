@@ -62,10 +62,10 @@ const FAQ = () => {
         <div className="flex flex-col gap-[30px]">
           <div className="flex flex-col">
             <h2 className="font-bold text-white text-[36px] leading-[52px]">
-              Get Your Answers
+              Frequently Asked Question
             </h2>
             <p className="text-lg text-gray-400">
-              It’s time to upgrade skills without limits!
+              Waktunya upgrade skills tanpa batas!
             </p>
           </div>
           <a

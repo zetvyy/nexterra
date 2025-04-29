@@ -1,6 +1,7 @@
 import "./App.css";
 import FAQ from "./components/FAQ";
 import Navbar from "./components/Navbar";
+import logo from "./assets/img/icons/nexterra.png";
 
 function App() {
   return (
@@ -11,9 +12,8 @@ function App() {
         {/* Hero Section */}
         <section className="py-20 md:py-32 bg-gradient-to-br from-gray-800 to-black">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Kenapa Nexterra?
-            </h1>
+            <img src={logo} className="w-64 mx-auto mb-6" alt="logo" />
+
             <p className="text-lg md:text-xl text-gray-400 mb-8">
               Platform pembelajaran digital untuk mengembangkan skill dan bisnis
               Anda.
@@ -25,7 +25,10 @@ function App() {
         </section>
 
         {/* Keunggulan Nexterra */}
-        <section className="py-16">
+        <section className="p-16">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Kenapa Nexterra?
+          </h1>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-semibold mb-2">
