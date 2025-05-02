@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/img/icons/nexterra.png";
 import { Link } from "react-router";
 
@@ -14,6 +14,11 @@ const Navbar = () => {
   const toggleProfileMenu = () => {
     setIsProfileMenuOpen(!isProfileMenuOpen);
   };
+
+  useEffect(() => {
+    setIsLoggedIn = false;
+    toggleProfileMenu = false;
+  }, []);
 
   return (
     <nav className="bg-gray-800">

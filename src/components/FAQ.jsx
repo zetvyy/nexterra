@@ -68,12 +68,9 @@ const FAQ = () => {
               Waktunya upgrade skills tanpa batas!
             </p>
           </div>
-          <a
-            href="#" // Tambahkan link yang sesuai
-            className="text-white font-semibold rounded-[30px] p-[16px_32px] bg-indigo-600 transition-all duration-300 hover:shadow-[0_10px_20px_0_rgba(75,123,255,0.5)] w-fit"
-          >
+          <div className="text-white font-semibold rounded-[30px] p-[16px_32px] bg-indigo-600 transition-all duration-300 hover:shadow-[0_10px_20px_0_rgba(75,123,255,0.5)] w-fit">
             Contact Our Sales
-          </a>
+          </div>
         </div>
         <div className="flex flex-col gap-[20px] w-full lg:w-[552px] shrink-0">
           {faqData.map((faqItem) => (
