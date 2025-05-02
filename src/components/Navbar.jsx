@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/img/icons/nexterra.png";
+import { Link } from "react-router";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-purple-600">
+    <nav className="bg-gray-800">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -69,11 +70,13 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img className="h-8 w-auto" src={logo} alt="Your Company" />
+              <Link to={"/"}>
+                <img className="h-8 w-auto" src={logo} alt="Your Company" />
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a
+                {/* <a
                   href="#"
                   className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                   aria-current="page"
@@ -97,7 +100,7 @@ const Navbar = () => {
                   className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
                   Calendar
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -181,7 +184,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pt-2 pb-3">
-            <a
+            {/* <a
               href="#"
               className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
               aria-current="page"
@@ -205,7 +208,7 @@ const Navbar = () => {
               className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
             >
               Calendar
-            </a>
+            </a> */}
             {/* Tombol Login dan Sign Up di dalam Mobile Menu */}
             {!isLoggedIn && (
               <div className="mt-3 space-y-2">
