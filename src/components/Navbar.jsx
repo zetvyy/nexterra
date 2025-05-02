@@ -16,8 +16,7 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setIsLoggedIn = false;
-    toggleProfileMenu = false;
+    setIsLoggedIn(false);
   }, []);
 
   return (
@@ -186,6 +185,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
+      {toggleProfileMenu}
       {isMobileMenuOpen && (
         <div className="sm:hidden" id="mobile-menu">
           <div className="space-y-1 px-2 pt-2 pb-3">
