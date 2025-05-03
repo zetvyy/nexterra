@@ -86,7 +86,7 @@ const home = () => {
         {/* FAQ Section */}
         <FAQ />
 
-        <section className="py-20 bg-gradient-to-br from-black to-gray-800 text-center">
+        <section className="py-20 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
           <div className="container mx-auto">
             <h2 className="text-3xl font-semibold mb-6">
               “An investment in knowledge pays the best interest.”
