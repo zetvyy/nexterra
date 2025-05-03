@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
+import CourseVideoList from "../components/CourseVideoList";
 
 const dummyCourses = [
   {
@@ -16,7 +17,7 @@ const dummyCourses = [
       {
         id: 101,
         name: "Introduction to React",
-        path_video: "your_youtube_embed_id_1", // Replace with actual YouTube ID
+        path_video: "SqcY0GlETPk", // Replace with actual YouTube ID
       },
       {
         id: 102,
@@ -95,26 +96,23 @@ const dummyCourses = [
 ];
 
 const LearningPath = () => {
-  const { courseId } = useParams();
-  const { videoId } = useParams();
+  const { courseId, courseVideoId } = useParams();
   const [course, setCourse] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const [selectedCourse, setSelectedCourse] = useState(dummyCourses[0]);
-  const [selectedVideo, setSelectedVideo] = useState(
-    selectedCourse.course_videos[0]?.path_video || ""
-  );
+  const [selectedCourse, setSelectedCourse] = useState(dummyCourses[0] || null);
   const [isCourseListOpen, setIsCourseListOpen] = useState(false);
+  const [selectedVideo, setSelectedVideo] = useState(courseVideoId || null);
 
   const handleCourseSelect = () => {
     setSelectedCourse(course);
-    setSelectedVideo(course.course_videos[0]?.path_video || ""); // Select the first video of the course.
     setIsCourseListOpen(false); // Close dropdown on select
   };
 
-  const handleVideoSelect = () => {
+  const handleVideoSelect = (videoId) => {
     setSelectedVideo(videoId);
+    // Tidak perlu window.location.replace di sini.
   };
 
   useEffect(() => {
@@ -125,6 +123,10 @@ const LearningPath = () => {
         const foundCourse = dummyCourses.find(
           (c) => c.id === parseInt(courseId)
         );
+
+        if (course && !selectedVideo && course.course_videos.length > 0) {
+          setSelectedVideo(course.course_videos[0].path_video); // Set video pertama setelah course dimuat
+        }
 
         if (!foundCourse) {
           throw new Error("Course not found");
@@ -139,7 +141,7 @@ const LearningPath = () => {
     };
 
     fetchData();
-  }, [courseId]);
+  }, [courseId, course, selectedVideo]);
 
   if (loading) {
     return <div>Loading course data...</div>;
@@ -174,7 +176,10 @@ const LearningPath = () => {
                   <p className="text-gray-300">{selectedCourse.description}</p>
                 </div>
                 <div className="p-4">
-                  <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                  <div
+                    className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden"
+                    style={{ height: "400px" }}
+                  >
                     {selectedVideo ? (
                       <iframe
                         className="w-full h-full"
@@ -205,10 +210,17 @@ const LearningPath = () => {
                   </div>
                   <p className="mt-4 text-gray-200">
                     Currently viewing:{" "}
-                    <span className="font-semibold text-white">
-                      {selectedCourse.course_videos.find(
+                    {/* <span className="font-semibold text-white">
+                      {course?.course_videos?.find(
                         (v) => v.path_video === selectedVideo
                       )?.name || "No Video Selected"}
+                    </span> */}
+                    <span className="font-semibold text-white">
+                      {course &&
+                      course.course_videos &&
+                      course.course_videos.length > 0
+                        ? course.course_videos.name
+                        : "No Video Selected"}
                     </span>
                   </p>
                 </div>
@@ -240,29 +252,6 @@ const LearningPath = () => {
                     Course List
                   </h2>
                   <div className="relative inline-block text-left w-full mt-2">
-                    <button
-                      onClick={() => setIsCourseListOpen(!isCourseListOpen)}
-                      className="w-full justify-between bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-md"
-                    >
-                      {selectedCourse.title}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        className={`lucide lucide-chevron-down w-5 h-5 transition-transform ${
-                          isCourseListOpen ? "rotate-180" : ""
-                        }`}
-                      >
-                        <path d="m7 10 5 5 5-5" />
-                      </svg>
-                    </button>
-
                     {isCourseListOpen && (
                       <div className="absolute z-10 mt-2 w-full bg-gray-800 border border-gray-700 rounded-md shadow-lg">
                         <div
@@ -271,18 +260,18 @@ const LearningPath = () => {
                           aria-orientation="vertical"
                           aria-labelledby="options-menu"
                         >
-                          {dummyCourses.map((course) => (
+                          {dummyCourses.map((mappedCourse) => (
                             <button
-                              key={course.id}
-                              onClick={() => handleCourseSelect(course)}
+                              key={mappedCourse.id}
+                              onClick={() => handleCourseSelect(mappedCourse)}
                               className={`block px-4 py-2 text-sm text-gray-200 w-full text-left hover:bg-gray-700 hover:text-white ${
-                                course.id === selectedCourse.id
+                                mappedCourse.id === selectedCourse.id
                                   ? "bg-gray-700 text-white"
                                   : ""
                               }`}
                               role="menuitem"
                             >
-                              {course.title}
+                              {mappedCourse.title}
                             </button>
                           ))}
                         </div>
@@ -291,34 +280,13 @@ const LearningPath = () => {
                   </div>
                 </div>
                 <div className="p-4 space-y-4">
-                  {selectedCourse.course_videos.map((video) => (
-                    <button
-                      key={video.id}
-                      onClick={() => handleVideoSelect(video.path_video)}
-                      className={`w-full flex items-center justify-start gap-2 text-gray-200 hover:bg-gray-700 hover:text-white px-4 py-2 rounded-md ${
-                        selectedVideo === video.path_video
-                          ? "bg-gray-700 text-white"
-                          : ""
-                      }`}
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        className="lucide lucide-play-circle w-4 h-4"
-                      >
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="m10 8 6 4-6 4V8z" />
-                      </svg>
-                      {video.name}
-                    </button>
-                  ))}
+                  {course && (
+                    <CourseVideoList
+                      course={course}
+                      selectedVideo={selectedVideo}
+                      onVideoSelect={handleVideoSelect}
+                    />
+                  )}
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 import Ebook1 from "../assets/img/Ebook-1.jpeg";
 import Ebook2 from "../assets/img/Ebook-2.jpeg";
 import Ebook3 from "../assets/img/Ebook-3.jpeg";
