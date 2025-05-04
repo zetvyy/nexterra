@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/img/icons/nexterra.png";
+import logo from "../assets/img/icons/nexterra-white.png";
 import { Link } from "react-router";
 
 const Navbar = () => {
