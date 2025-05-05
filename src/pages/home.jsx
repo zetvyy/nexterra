@@ -4,12 +4,11 @@ import FAQ from "../components/FAQ";
 import logo from "../assets/img/icons/nexterra-white.png";
 import { Link } from "react-router";
 import leodavinci from "../assets/img/leodavinci.jpg";
-import {
-  ArchiveBoxIcon,
-  HeartIcon,
-  VariableIcon,
-  WifiIcon,
-} from "@heroicons/react/24/outline";
+import { ShieldExclamationIcon } from "@heroicons/react/24/outline";
+import undraw1 from "../assets/img/undraw1.svg";
+import undraw2 from "../assets/img/undraw2.svg";
+import undraw3 from "../assets/img/undraw3.svg";
+import undraw4 from "../assets/img/undraw4.svg";
 
 const home = () => {
   return (
@@ -28,46 +27,57 @@ const home = () => {
             <p className="text-lg md:text-xl text-gray-400 mb-8">
               Selamat Datang di Nexterra, Di Sini Strategi Bertemu Eksekusi!
             </p>
-            {/* <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg">
-              <Link to="/feature">Jelajahi Edukasi</Link>
-            </button> */}
+            <div className="bg-gray-800 rounded-lg p-8 text-white text-center">
+              <p className="mb-4">
+                Di tengah derasnya informasi digital, hanya mereka yang mampu
+                bertindaklah yang akan melangkah lebih jauh. Nexterra hadir
+                untuk Anda—pengusaha yang ingin scale-up, karyawan yang ingin
+                naik level, mahasiswa yang haus skill masa depan, atau kreator
+                yang ingin membangun ekosistem digital yang kuat.
+              </p>
+              <p>
+                Kami tidak hanya menyajikan teori. Kami membangun ekosistem
+                belajar yang transformatif, aplikatif, dan berorientasi aksi
+                nyata.
+              </p>
+            </div>
           </div>
         </section>
 
         {/* Problem Statement Section */}
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
               Banyak Belajar, Minim Aksi? Anda Tidak Sendirian.
             </h2>
-            <ul className="list-none text-lg">
+            <ul className="list-none text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               <li className="mb-4 flex items-center">
-                <VariableIcon className="h-6 w-6 mr-4 text-purple-500" />
+                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
                 <span>Tahu teorinya, tapi bingung menerapkannya.</span>
               </li>
               <li className="mb-4 flex items-center">
-                <VariableIcon className="h-6 w-6 mr-4 text-purple-500" />
+                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
                 <span>
                   Sudah ikut banyak kelas, tapi belum ada yang berubah.
                 </span>
               </li>
               <li className="mb-4 flex items-center">
-                <ArchiveBoxIcon className="h-6 w-6 mr-4 text-purple-500" />
+                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
                 <span>
                   Merasa sibuk belajar, tapi sebenarnya hanya menumpuk
                   pengetahuan.
                 </span>
               </li>
               <li className="mb-4 flex items-center">
-                <WifiIcon className="h-6 w-6 mr-4 text-purple-500" />
+                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
                 <span>Terdistraksi oleh banyaknya pilihan belajar.</span>
               </li>
               <li className="mb-4 flex items-center">
-                <HeartIcon className="h-6 w-6 mr-4 text-purple-500" />
+                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
                 <span>Kehilangan semangat karena tidak ada hasil nyata.</span>
               </li>
             </ul>
-            <p className="mt-6 text-md md:text-lg text-center italic">
+            <p className="mt-6 text-md md:text-lg text-center italic text-gray-300">
               Inilah fenomena “Overlearning, Underacting”. Jangan biarkan
               pengetahuan Anda hanya menjadi tumpukan catatan.
             </p>
@@ -124,20 +134,36 @@ const home = () => {
         {/* Value Proposition Section */}
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
               Nexterra: Tempat Ilmu Bekerja, Bukan Hanya Disimpan
             </h2>
-            <p className="text-lg mb-6 text-center">
+            <p className="text-lg mb-6 text-center text-gray-300">
               Kami hadir untuk Anda yang serius ingin bertumbuh, dengan
               pendekatan belajar yang:
             </p>
-            <ul className="list-disc list-inside text-lg">
-              <li className="mb-2">Terstruktur, bukan acak-acakan.</li>
-              <li className="mb-2">Aplikatif, bukan hanya teoritis.</li>
-              <li className="mb-2">Sederhana tapi tajam.</li>
-              <li className="mb-2">Fleksibel tapi tetap intens.</li>
-            </ul>
-            <p className="mt-6 text-lg text-center">
+            <div className="p-6 flex justify-center items-center space-x-4">
+              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
+                <img
+                  src={undraw1}
+                  alt="Terstruktur"
+                  className="w-28 h-20 mb-2"
+                />
+                <span>Terstruktur, bukan acak-acakan.</span>
+              </div>
+              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
+                <img src={undraw2} alt="Aplikatif" className="w-28 h-20 mb-2" />
+                <span>Aplikatif, bukan hanya teoritis.</span>
+              </div>
+              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
+                <img src={undraw3} alt="Sederhana" className="w-28 h-20 mb-2" />
+                <span>Sederhana tapi tajam.</span>
+              </div>
+              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
+                <img src={undraw4} alt="Fleksibel" className="w-28 h-20 mb-2" />
+                <span>Fleksibel tapi tetap intens.</span>
+              </div>
+            </div>
+            <p className="mt-6 text-lg text-center text-gray-300">
               Lewat empat jalur utama pembelajaran, kami membangun ekosistem
               untuk membantu Anda bertindak lebih cepat.
             </p>
@@ -304,17 +330,6 @@ const home = () => {
                   - Rina Pratiwi, Freelancer Digital Marketing
                 </p>
               </div>
-              <div className="bg-gray-800 rounded-md p-6">
-                <p className="text-gray-300 italic mb-4">
-                  “Setelah mengikuti beberapa webinar di Nexterra, saya mulai
-                  merasa bahwa belajar bisa menyenangkan dan bermanfaat. Saya
-                  berhasil mengaplikasikan banyak hal baru dalam pekerjaan dan
-                  bisnis saya. Terima kasih Nexterra!”
-                </p>
-                <p className="font-semibold">
-                  - Ari Susanto, Manajer Pemasaran
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -337,92 +352,99 @@ const home = () => {
         {/* Steps to Success Section */}
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
               6 Langkah Belajar Terarah di Nexterra
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
-                  1
+              {/* Kolom Kiri (1-3) */}
+              <div className="order-1">
+                <div className="flex items-start mb-6">
+                  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                    1
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-white">
+                      Kenali Tujuan & Kebutuhan Anda
+                    </h3>
+                    <p className="text-md text-gray-300">
+                      Mulai dengan apa yang ingin Anda capai. Nexterra membantu
+                      memetakan arah belajar Anda.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">
-                    Kenali Tujuan & Kebutuhan Anda
-                  </h3>
-                  <p className="text-md">
-                    Mulai dengan apa yang ingin Anda capai. Nexterra membantu
-                    memetakan arah belajar Anda.
-                  </p>
+                <div className="flex items-start mb-6">
+                  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                    2
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-white">
+                      Pilih Jalur Pembelajaran yang Tepat
+                    </h3>
+                    <p className="text-md text-gray-300">
+                      Insight Series, Digital Mastery, GrowthLab, atau Action
+                      Lab - pilih sesuai gaya belajar Anda.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">
-                    Pilih Jalur Pembelajaran yang Tepat
-                  </h3>
-                  <p className="text-md">
-                    Insight Series, Digital Mastery, GrowthLab, atau Action Lab
-                    - pilih sesuai gaya belajar Anda.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">
-                    Akses Materi Fleksibel
-                  </h3>
-                  <p className="text-md">
-                    Belajar kapan saja, di mana saja melalui platform digital
-                    kami yang terstruktur.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
-                  4
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">
-                    Terapkan Ilmu Secara Bertahap
-                  </h3>
-                  <p className="text-md">
-                    Setiap modul dilengkapi action point dan template untuk
-                    penerapan langsung.
-                  </p>
+                <div className="flex items-start">
+                  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                    3
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-white">
+                      Akses Materi Fleksibel
+                    </h3>
+                    <p className="text-md text-gray-300">
+                      Belajar kapan saja, di mana saja melalui platform digital
+                      kami yang terstruktur.
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
-                  5
+
+              {/* Kolom Kanan (4-6) */}
+              <div className="order-2">
+                <div className="flex items-start mb-6">
+                  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                    4
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-white">
+                      Terapkan Ilmu Secara Bertahap
+                    </h3>
+                    <p className="text-md text-gray-300">
+                      Setiap modul dilengkapi action point dan template untuk
+                      penerapan langsung.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">
-                    Dapatkan Feedback & Arahan Praktis
-                  </h3>
-                  <p className="text-md">
-                    Sesi live, mentoring, dan review untuk membantu Anda
-                    berkembang lebih jauh.
-                  </p>
+                <div className="flex items-start mb-6">
+                  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                    5
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-white">
+                      Dapatkan Feedback & Arahan Praktis
+                    </h3>
+                    <p className="text-md text-gray-300">
+                      Sesi live, mentoring, dan review untuk membantu Anda
+                      berkembang lebih jauh.
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start">
-                <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
-                  6
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">
-                    Review & Konsisten Bertumbuh
-                  </h3>
-                  <p className="text-md">
-                    Sistem modular untuk menyesuaikan jalur belajar dengan
-                    perkembangan Anda.
-                  </p>
+                <div className="flex items-start">
+                  <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
+                    6
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold mb-1 text-white">
+                      Review & Konsisten Bertumbuh
+                    </h3>
+                    <p className="text-md text-gray-300">
+                      Sistem modular untuk menyesuaikan jalur belajar dengan
+                      perkembangan Anda.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -601,24 +623,24 @@ const home = () => {
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="bg-gray-800 rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
-              {/* Gambar Leonardo da Vinci */}
-              <div className="w-48 h-48 rounded-full overflow-hidden shadow-md">
+              {/* Gambar Leonardo da Vinci yang Lebih Besar */}
+              <div className="w-64 h-auto md:w-80 md:h-auto overflow-hidden shadow-md">
                 <img
                   src={leodavinci} // Ganti dengan URL atau import gambar Anda
                   alt="Leonardo da Vinci"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
 
               {/* Teks Inspirasi */}
               <div className="text-center md:text-left">
-                <blockquote className="text-xl md:text-2xl italic mb-4">
+                <blockquote className="text-xl md:text-2xl italic mb-4 text-white">
                   “Learning never exhausts the mind.”
                 </blockquote>
                 <cite className="text-md text-gray-400">
                   - Leonardo da Vinci
                 </cite>
-                <p className="text-lg mt-6">
+                <p className="text-lg mt-6 text-gray-300 leading-relaxed">
                   Beliau mengingatkan kita bahwa belajar adalah kekuatan tak
                   terbatas yang tidak akan pernah melelahkan pikiran kita,
                   justru malah akan memperkuatnya. Jika Anda merasa terjebak
@@ -627,10 +649,10 @@ const home = () => {
                   belajar lebih, berpikir lebih, dan melampaui apa yang Anda
                   kira mungkin.
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2">
+                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
                   Kenapa harus mulai dari sekarang?
                 </h3>
-                <p className="text-lg mb-4">
+                <p className="text-lg mb-4 text-gray-300 leading-relaxed">
                   Jangan biarkan ketakutan atau keraguan menghalangi Anda untuk
                   mengeksplorasi potensi Anda. Pikiran Anda tidak akan pernah
                   lelah belajar, justru Anda akan menemukan kekuatan baru setiap
@@ -638,20 +660,20 @@ const home = () => {
                   Anda yang siap melangkah keluar dari zona nyaman dan mengubah
                   masa depan Anda.
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2">
+                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
                   Tidak Ada Batasan untuk Belajar
                 </h3>
-                <p className="text-lg mb-4">
+                <p className="text-lg mb-4 text-gray-300 leading-relaxed">
                   Di Nexterra, kami tidak hanya mengajarkan Anda teori, tapi
                   memberikan Anda tantangan nyata untuk diterapkan. Kami percaya
                   bahwa belajar adalah sebuah proses yang memperkuat otak, dan
                   setiap pelajaran adalah kesempatan untuk berkembang lebih
                   jauh. Apakah Anda siap untuk menguji kemampuan Anda?
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2">
+                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
                   Pikiran Anda Hanya Akan Semakin Kuat
                 </h3>
-                <p className="text-lg mb-4">
+                <p className="text-lg mb-4 text-gray-300 leading-relaxed">
                   Setiap keterampilan yang Anda pelajari di Nexterra bukan hanya
                   untuk menambah wawasan—ini adalah pelatihan mental yang akan
                   mengasah cara berpikir dan kemampuan Anda untuk memecahkan
@@ -660,17 +682,17 @@ const home = () => {
                   Anda akan dipersiapkan untuk melewati tantangan-tantangan
                   tersebut dengan kekuatan yang tak terbatas.
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2">
+                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
                   Siap untuk Menjadi Lebih Baik?
                 </h3>
-                <p className="text-lg mb-6">
+                <p className="text-lg mb-6 text-gray-300 leading-relaxed">
                   Jika Anda berpikir bahwa Anda sudah tahu segalanya, mungkin
                   ini saatnya untuk mencoba sesuatu yang baru. Belajar bukan
                   hanya tentang menambah informasi, tapi tentang menantang diri
                   untuk terus berkembang. Mulailah di Nexterra, dan biarkan kami
                   membawa Anda lebih jauh dari yang pernah Anda bayangkan.
                 </p>
-                <p className="text-lg italic">
+                <p className="text-lg italic text-gray-300">
                   Belajar tidak akan pernah melelahkan Anda—justru, itu akan
                   mengubah Anda.
                 </p>
