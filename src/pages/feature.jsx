@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/navbar";
 import Ebook1 from "../assets/img/Ebook-1.jpeg";
 import Ebook2 from "../assets/img/Ebook-2.jpeg";
 import Ebook3 from "../assets/img/Ebook-3.jpeg";
@@ -145,8 +144,6 @@ const feature = () => {
 
   return (
     <>
-      <Navbar />
-
       <div className="bg-gradient-to-r from-purple-800 to-gray-600 min-h-screen py-10">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-white text-center mb-8">
@@ -170,11 +167,6 @@ const feature = () => {
           )}
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="py-8 text-center text-gray-500 bg-gray-800">
-        <p>&copy; 2025 Nexterra. All rights reserved.</p>
-      </footer>
     </>
   );
 };

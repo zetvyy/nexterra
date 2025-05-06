@@ -112,18 +112,22 @@ const Navbar = () => {
             {/* Tombol Login dan Sign Up untuk tampilan desktop (tersembunyi di mobile) */}
             {!isLoggedIn && (
               <div className="hidden sm:flex space-x-2">
-                <button
-                  type="button"
-                  className="relative rounded-md bg-gray-800 px-3 py-2 text-sm font-medium text-gray-300 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none"
-                >
-                  Login
-                </button>
-                <button
-                  type="button"
-                  className="relative rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none"
-                >
-                  Sign Up
-                </button>
+                <Link to={"/auth"}>
+                  <button
+                    type="button"
+                    className="relative rounded-md bg-gray-800 px-3 py-2 text-sm font-medium text-gray-300 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none"
+                  >
+                    Login
+                  </button>
+                </Link>
+                <Link to={"/auth"}>
+                  <button
+                    type="button"
+                    className="relative rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-none"
+                  >
+                    Sign Up
+                  </button>
+                </Link>
               </div>
             )}
 
