@@ -81,6 +81,12 @@ const home = () => {
               Inilah fenomena “Overlearning, Underacting”. Jangan biarkan
               pengetahuan Anda hanya menjadi tumpukan catatan.
             </p>
+            <p className="mt-6 text-md md:text-lg text-center text-gray-300">
+              Di sisi lain, dunia terus bergerak. <br />
+              Bisnis berubah, teknologi berkembang, dan kebutuhan pasar makin
+              kompleks. Tanpa aksi nyata dan hasil konkret, pengetahuan hanya
+              akan jadi tumpukan catatan—bukan alat untuk bertumbuh.
+            </p>
           </div>
         </section>
 
@@ -131,6 +137,19 @@ const home = () => {
           </div>
         </section>
 
+        <section className="py-20 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
+          <div className="container mx-auto">
+            <p className="text-2xl text-gray-400 mb-8 font-bold">
+              {" "}
+              Di Nexterra, Anda tidak hanya belajar. <br />
+              Anda bertumbuh, membangun, dan bergerak.
+            </p>
+            <h2 className="text-3xl font-semibold mb-6">
+              Mari ubah wawasan jadi aksi, ubah potensi jadi pencapaian.
+            </h2>
+          </div>
+        </section>
+
         {/* Value Proposition Section */}
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
@@ -138,34 +157,94 @@ const home = () => {
               Nexterra: Tempat Ilmu Bekerja, Bukan Hanya Disimpan
             </h2>
             <p className="text-lg mb-6 text-center text-gray-300">
-              Kami hadir untuk Anda yang serius ingin bertumbuh, dengan
-              pendekatan belajar yang:
+              Kami tahu, Anda tidak butuh motivasi kosong. <br />
+              Anda butuh{" "}
+              <span className="font-bold">
+                strategi yang jelas, materi yang relevan,
+              </span>{" "}
+              dan {""}
+              <span className="font-bold">
+                panduan yang bisa diterapkan langsung.
+              </span>{" "}
+              <br />
+              Itulah kenapa Nexterra tidak dibuat untuk semua orang. <br />
+              Kami hadir untuk mereka yang serius ingin bertumbuh, bukan sekadar
+              menambah daftar tontonan atau koleksi sertifikat.
             </p>
-            <div className="p-6 flex justify-center items-center space-x-4">
-              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
+            <p className="text-lg mb-6 text-center text-gray-300">
+              Di Nexterra, Anda akan menemukan pendekatan belajar yang berbeda:
+            </p>
+            <div className="p-6 flex flex-wrap justify-center items-stretch gap-4">
+              <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
                 <img
                   src={undraw1}
                   alt="Terstruktur"
-                  className="w-28 h-20 mb-2"
+                  className="w-28 h-20 mb-4"
                 />
-                <span>Terstruktur, bukan acak-acakan.</span>
+                <span className="font-bold text-lg mb-1">
+                  Terstruktur, bukan acak-acakan.
+                </span>
+                <p className="text-sm">
+                  Kami kurasi materi agar progres Anda punya arah, dari pemula
+                  hingga tahap eksekusi.
+                </p>
               </div>
-              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
-                <img src={undraw2} alt="Aplikatif" className="w-28 h-20 mb-2" />
-                <span>Aplikatif, bukan hanya teoritis.</span>
+              <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
+                <img src={undraw2} alt="Aplikatif" className="w-28 h-20 mb-4" />
+                <span className="font-bold text-lg mb-1">
+                  Aplikatif, bukan hanya teoritis.
+                </span>
+                <p className="text-sm">
+                  Setiap modul, webinar, dan ebook kami rancang dengan fokus
+                  pada “apa yang bisa Anda lakukan setelah ini.”
+                </p>
               </div>
-              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
-                <img src={undraw3} alt="Sederhana" className="w-28 h-20 mb-2" />
-                <span>Sederhana tapi tajam.</span>
+              <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
+                <img src={undraw3} alt="Sederhana" className="w-28 h-20 mb-4" />
+                <span className="font-bold text-lg mb-1">
+                  Sederhana tapi tajam.
+                </span>
+                <p className="text-sm">
+                  Kami bantu Anda fokus pada hal yang berdampak, bukan tren
+                  sesaat.
+                </p>
               </div>
-              <div className="bg-gray-800 rounded-md p-4 text-center text-white flex flex-col items-center">
-                <img src={undraw4} alt="Fleksibel" className="w-28 h-20 mb-2" />
-                <span>Fleksibel tapi tetap intens.</span>
+              <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
+                <img src={undraw4} alt="Fleksibel" className="w-28 h-20 mb-4" />
+                <span className="font-bold text-lg mb-1">
+                  Fleksibel tapi tetap intens.
+                </span>
+                <p className="text-sm">
+                  Belajar sesuai waktu Anda, tapi tetap ditantang untuk bergerak
+                  maju.
+                </p>
               </div>
             </div>
             <p className="mt-6 text-lg text-center text-gray-300">
-              Lewat empat jalur utama pembelajaran, kami membangun ekosistem
-              untuk membantu Anda bertindak lebih cepat.
+              Lewat empat jalur utama pembelajaran,{" "}
+              <span className="font-bold text-white">
+                —Insight Series, Digital Mastery, GrowthLab, dan Action Lab—
+              </span>{" "}
+              kami membangun ekosistem yang memudahkan Anda bukan hanya{" "}
+              <span className="font-bold text-white">
+                belajar lebih banyak,
+              </span>{" "}
+              tapi{" "}
+              <span className="font-bold text-white">
+                bertindak lebih cepat.
+              </span>
+            </p>
+            <p className="mt-6 text-lg text-center text-gray-300">
+              Ini bukan soal menjadi yang paling pintar. <br />
+              Ini tentang menjadi yang paling siap{" "}
+              <span className="font-bold text-white">
+                melangkah dan beradaptasi.
+              </span>
+              <br />
+              Dan kami ada di sini, untuk bantu Anda bergerak ke sana. <br />
+              <span className="font-bold text-white">
+                Bukan nanti. Tapi mulai sekarang.
+              </span>
             </p>
           </div>
         </section>
@@ -177,15 +256,50 @@ const home = () => {
               Mulai Perjalanan Belajar yang Berdampak Sekarang!
             </h2>
             <p className="text-lg md:text-xl mb-8">
-              Jangan tunda lagi. Pilih jalur yang sesuai dengan kebutuhan Anda
-              dan ambil langkah pertama menuju pertumbuhan nyata.
+              Setiap orang bisa belajar, tapi hanya mereka yang berani bertindak
+              yang akan menciptakan hasil nyata.
             </p>
-            <div className="space-x-4">
-              <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg">
-                Jelajahi Program
-              </button>
-              {/* Anda bisa menambahkan tombol lain atau link ke program spesifik di sini */}
+            <p className="text-lg md:text-xl mb-8">
+              Di Nexterra, kami tidak menjanjikan jalan pintas. Tapi kami{" "}
+              <span className="font-bold">
+                menyediakan jalur yang tepat, sumber belajar yang relevan,
+              </span>{" "}
+              dan <span className="font-bold">dukungan nyata</span> agar Anda
+              bisa naik level—dengan cara yang terukur, bertahap, dan bisa
+              dipertanggungjawabkan.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 mx-auto mb-5">
+              <span className="bg-purple-100 rounded-full py-4 px-8 text-purple-700 font-bold text-lg text-center">
+                Ingin strategi cepat & padat? <br />
+                Mulai dari 📘 Insight Series.
+              </span>
+              <span className="bg-green-100 rounded-full py-4 px-8 text-green-700 font-bold text-lg text-center">
+                Ingin diskusi langsung dengan praktisi? <br /> Ikuti 🎓 Digital
+                Mastery.
+              </span>
+              <span className="bg-yellow-100 rounded-full py-4 px-8 text-yellow-700 font-bold text-lg text-center">
+                Siap mendalami skill secara sistematis? <br /> Masuk ke 💻
+                GrowthLab.
+              </span>
+              <span className="bg-red-100 rounded-full py-4 px-8 text-red-700 font-bold text-lg text-center">
+                Butuh arahan langsung & personal? <br /> Pilih 👥 Action Lab.
+              </span>
+              {/* Tambahkan badge/label lainnya di sini */}
             </div>
+            <p className="text-lg md:text-xl mb-8">
+              Tidak perlu menunggu semuanya sempurna. <br />
+              <span className="font-bold">
+                {" "}
+                Cukup satu langkah hari ini, untuk hasil yang berbeda besok.{" "}
+              </span>
+            </p>
+            <button className="mb-5 bg-purple-500 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg">
+              Jelajahi Program Nexterra Sekarang
+            </button>
+            <p className="text-lg md:text-xl mb-8">
+              Karena belajar seharusnya tidak bikin ragu—tapi membuat Anda siap
+              bergerak.
+            </p>
           </div>
         </section>
 
@@ -265,7 +379,7 @@ const home = () => {
             <h2 className="text-3xl font-semibold text-center mb-8">
               Apa Kata Mereka ?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-5">
               <div className="bg-gray-800 rounded-md p-6">
                 <p className="text-gray-300 italic mb-4">
                   “Saya baru pertama kali mengikuti webinar di Nexterra dan
@@ -331,6 +445,16 @@ const home = () => {
                 </p>
               </div>
             </div>
+            <p className="text-lg mb-6 text-center text-gray-300">
+              <span className="font-bold">
+                {" "}
+                Tertarik belajar lebih banyak dan berkembang?
+              </span>{" "}
+              <br />
+              Jelajahi berbagai edukasi baru untuk bisnismu dan pengembangan
+              diri di Nexterra. Mulai perjalananmu dengan langkah kecil yang
+              besar dampaknya!
+            </p>
           </div>
         </section>
 
@@ -338,14 +462,12 @@ const home = () => {
         <section className="bg-gradient-to-br from-purple-800 to-gray-600 py-20 md:py-32">
           <div className="container mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Belajar dengan Berani. Bertindak Nyata. Tumbuh ke Depan.
+              Belajar dengan Berani. Bertindak Nyata. <br />
+              Tumbuh ke Depan.
             </h1>
             <p className="text-lg md:text-xl mb-8">
               Nexterra: Ekosistem pertumbuhan untuk para penggerak perubahan.
             </p>
-            <button className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full text-lg">
-              Mulai Belajar Sekarang
-            </button>
           </div>
         </section>
 
