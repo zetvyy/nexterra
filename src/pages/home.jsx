@@ -269,19 +269,19 @@ const home = () => {
               dipertanggungjawabkan.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mx-auto mb-5">
-              <span className="bg-purple-100 rounded-full py-4 px-8 text-purple-700 font-bold text-lg text-center">
+              <span className="w-[400px] bg-purple-100 rounded-full py-4 px-8 text-purple-700 font-bold text-lg text-center">
                 Ingin strategi cepat & padat? <br />
                 Mulai dari 📘 Insight Series.
               </span>
-              <span className="bg-green-100 rounded-full py-4 px-8 text-green-700 font-bold text-lg text-center">
+              <span className="w-[400px] bg-green-100 rounded-full py-4 px-8 text-green-700 font-bold text-lg text-center">
                 Ingin diskusi langsung dengan praktisi? <br /> Ikuti 🎓 Digital
                 Mastery.
               </span>
-              <span className="bg-yellow-100 rounded-full py-4 px-8 text-yellow-700 font-bold text-lg text-center">
+              <span className=" w-[400px] bg-yellow-100 rounded-full py-4 px-8 text-yellow-700 font-bold text-lg text-center">
                 Siap mendalami skill secara sistematis? <br /> Masuk ke 💻
                 GrowthLab.
               </span>
-              <span className="bg-red-100 rounded-full py-4 px-8 text-red-700 font-bold text-lg text-center">
+              <span className="w-[400px] bg-red-100 rounded-full py-4 px-8 text-red-700 font-bold text-lg text-center">
                 Butuh arahan langsung & personal? <br /> Pilih 👥 Action Lab.
               </span>
               {/* Tambahkan badge/label lainnya di sini */}
