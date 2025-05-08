@@ -10,8 +10,6 @@ import undraw2 from "../assets/img/undraw2.svg";
 import undraw3 from "../assets/img/undraw3.svg";
 import undraw4 from "../assets/img/undraw4.svg";
 import Ebook1 from "../assets/img/Ebook-1.jpeg";
-import Ebook2 from "../assets/img/Ebook-2.jpeg";
-import Ebook3 from "../assets/img/Ebook-3.jpeg";
 import Ebook4 from "../assets/img/Ebook-4.jpeg";
 import Ebook5 from "../assets/img/Ebook-5.jpeg";
 
@@ -481,14 +479,14 @@ const home = () => {
                 Insight Series
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-purple-800 mb-2">
                     Mengenal Market dalam Marketing
                   </h3>
                   <img
                     src={Ebook1}
                     alt="Mengenal Market dalam Marketing"
-                    className="w-full h-auto rounded-md mb-4"
+                    className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
                   <p className="text-gray-600 mb-4">
                     Kamu pikir marketing itu soal desain keren dan caption kece?
@@ -497,23 +495,23 @@ const home = () => {
                     gagal padahal promosinya jalan terus? Jawabannya ada di
                     sini..
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-gray-500">E-book</span>
                     <span className="text-purple-800 font-bold">FREE</span>
                   </div>
-                  <button className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-purple-800 mb-2">
                     Skill yang Nggak Diajarkan di Kampus tapi Dicari Perusahaan
                   </h3>
                   <img
                     src={Ebook5}
                     alt="Skill yang Nggak Diajarkan di Kampus tapi Dicari Perusahaan"
-                    className="w-full h-auto rounded-md mb-4"
+                    className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
                   <p className="text-gray-600 mb-4">
                     Kuliah bertahun-tahun, skripsi berdarah-darah... tapi pas
@@ -522,23 +520,23 @@ const home = () => {
                     utama HRD. Jangan sampai kamu jadi korban sistem. Buka mata,
                     upgrade skill-mu sekarang!
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-gray-500">E-book</span>
                     <span className="text-purple-800 font-bold">FREE</span>
                   </div>
-                  <button className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-purple-800 mb-2">
                     Usaha Jalan tapi Ilegal: Bahaya yang Harus Dihindari
                   </h3>
                   <img
                     src={Ebook4}
                     alt="Usaha Jalan tapi Ilegal: Bahaya yang Harus Dihindari"
-                    className="w-full h-auto rounded-md mb-4"
+                    className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
                   <p className="text-gray-600 mb-4">
                     Kelihatannya bisnis kamu aman, tapi gimana kalau ternyata
@@ -547,62 +545,11 @@ const home = () => {
                     satu yang akhirnya disikat aturan. Ini yang harus kamu
                     waspadai sebelum terlambat!
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-gray-500">E-book</span>
                     <span className="text-purple-800 font-bold">FREE</span>
                   </div>
-                  <button className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
-                    Beli Sekarang
-                  </button>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-2">
-                    Mau Sukses? Berhenti Jadi Multitasker!
-                  </h3>
-                  <img
-                    src={Ebook3}
-                    alt="Mau Sukses? Berhenti Jadi Multitasker!"
-                    className="w-full h-auto rounded-md mb-4"
-                  />
-                  <p className="text-gray-600 mb-4">
-                    Multitasking itu keren? Justru itu jebakan! Makin banyak
-                    yang kamu kerjain sekaligus, makin kecil peluang kamu buat
-                    benar-benar berhasil. Mau tahu kenapa orang sukses justru
-                    anti multitasking? Baca ini sebelum kamu terus kejebak sibuk
-                    tapi nggak maju-maju.
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">E-book</span>
-                    <span className="text-purple-800 font-bold">FREE</span>
-                  </div>
-                  <button className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
-                    Beli Sekarang
-                  </button>
-                </div>
-
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-2">
-                    Karyawan tapi Punya Mimpi Bisnis? Langkah Awal Membangun
-                    Usaha Tanpa Harus Resign Duluan
-                  </h3>
-                  <img
-                    src={Ebook2}
-                    alt="Karyawan tapi Punya Mimpi Bisnis?"
-                    className="w-full h-auto rounded-md mb-4"
-                  />
-                  <p className="text-gray-600 mb-4">
-                    Pengen punya bisnis tapi masih terjebak jam kantor 9-to-5?
-                    Good news: kamu bisa mulai tanpa harus drama resign dulu.
-                    Ini bukan motivasi kosong. ini strategi diam-diam para
-                    pebisnis sukses yang dulunya juga karyawan. Mau tahu
-                    caranya?
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-gray-500">E-book</span>
-                    <span className="text-purple-800 font-bold">FREE</span>
-                  </div>
-                  <button className="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
@@ -614,7 +561,7 @@ const home = () => {
                 Digital Mastery
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-green-800 mb-2">
                     Strategi Pemasaran Digital 2024
                   </h3>
@@ -622,19 +569,19 @@ const home = () => {
                   <img
                     src="URL_WEBINAR_1"
                     alt="Strategi Pemasaran Digital 2024"
-                    className="w-full h-auto rounded-md mb-4"
+                    className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
                   <p className="text-gray-600 mb-4">
                     Webinar pelatihan tentang tren dan strategi pemasaran
                     digital terkini.
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-gray-500">Webinar</span>
                     <span className="text-green-800 font-bold">
                       Rp {`99000`}
                     </span>
                   </div>
-                  <button className="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
@@ -645,12 +592,12 @@ const home = () => {
             <section className="py-8">
               <h2 className="text-2xl font-bold text-white mb-6">Growth Lab</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-yellow-800 mb-2">
                     Mastering Tailwind CSS dalam 7 Hari
                   </h3>
                   {/* Jika ada trailer untuk E-course */}
-                  <div className="aspect-w-16 aspect-h-9 rounded-md overflow-hidden mb-4">
+                  <div className="aspect-w-16 aspect-h-9 rounded-md overflow-hidden mb-4 flex-grow">
                     <iframe
                       src="URL_ECOURSE_1_TRAILER"
                       title="Trailer"
@@ -663,13 +610,13 @@ const home = () => {
                     Kursus online intensif untuk menguasai Tailwind CSS dengan
                     cepat.
                   </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-gray-500">E-course</span>
                     <span className="text-yellow-800 font-bold">
                       Rp {`149000`}
                     </span>
                   </div>
-                  <button className="mt-4 bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
@@ -680,22 +627,24 @@ const home = () => {
             <section className="py-8">
               <h2 className="text-2xl font-bold text-white mb-6">Action Lab</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6">
+                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-red-800 mb-2">
                     Private Class Eksklusif
                   </h3>
                   {/* Mungkin tidak ada gambar/trailer khusus untuk private class */}
-                  <p className="text-gray-600 mb-4">
-                    lorem ipsum dolor sit amet parmet sir dolor paramet sir
-                    tulur
-                  </p>
-                  <div className="flex items-center justify-between">
+                  <div className="flex-grow">
+                    <p className="text-gray-600 mb-4">
+                      lorem ipsum dolor sit amet parmet sir dolor paramet sir
+                      tulur
+                    </p>
+                  </div>
+                  <div className="flex items-center justify-between mb-2">
                     <span className="text-sm text-gray-500">Private Class</span>
                     <span className="text-red-800 font-bold">
                       Rp {`129000`}
                     </span>
                   </div>
-                  <button className="mt-4 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
