@@ -22,17 +22,17 @@ const home = () => {
 
       <div className="bg-gray-900 text-white font-sans">
         {/* Hero Section */}
-        <section className="py-20 md:py-32 bg-gradient-to-br from-purple-800 to-grey-600">
+        <section className="py-20 md:py-32 md:px-20 bg-gradient-to-br from-purple-800 to-grey-600">
           <div className="container mx-auto text-center">
             <img src={logo} className="w-64 mx-auto mb-6" alt="logo" />
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold p-8">
               Wawasan Digital, Aksi Nyata
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-400 mb-8">
+            <p className="text-lg md:text-xl text-gray-400 m-8">
               Selamat Datang di Nexterra, Di Sini Strategi Bertemu Eksekusi!
             </p>
-            <div className="bg-gray-800 rounded-lg p-8 text-white text-center">
+            <div className="bg-transparant rounded-lg p-8 text-white text-center">
               <p className="mb-4">
                 Di tengah derasnya informasi digital, hanya mereka yang mampu
                 bertindaklah yang akan melangkah lebih jauh. Nexterra hadir
@@ -49,36 +49,57 @@ const home = () => {
           </div>
         </section>
         {/* Problem Statement Section */}
-        <section className="py-16 md:py-24 bg-gray-900">
+        <section className="py-16 md:py-24 bg-gray-900 px-8">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
+            <h2 className="text-2xl md:text-4xl font-semibold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Banyak Belajar, Minim Aksi? Anda Tidak Sendirian.
             </h2>
             <ul className="list-none text-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <li className="mb-4 flex items-center">
-                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
-                <span>Tahu teorinya, tapi bingung menerapkannya.</span>
+              <li className="mb-4 grid grid-cols-[auto_1fr] items-center gap-2">
+                <ShieldExclamationIcon
+                  className="text-sm mr-4 text-purple-500"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <span className="">
+                  Tahu teorinya, tapi bingung menerapkannya.
+                </span>
               </li>
-              <li className="mb-4 flex items-center">
-                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
-                <span>
+              <li className="mb-4 grid grid-cols-[auto_1fr] items-center gap-2">
+                <ShieldExclamationIcon
+                  className="text-sm mr-4 text-purple-500"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <span className="">
                   Sudah ikut banyak kelas, tapi belum ada yang berubah.
                 </span>
               </li>
-              <li className="mb-4 flex items-center">
-                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
-                <span>
+              <li className="mb-4 grid grid-cols-[auto_1fr] items-center gap-2">
+                <ShieldExclamationIcon
+                  className="text-sm mr-4 text-purple-500"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <span className="">
                   Merasa sibuk belajar, tapi sebenarnya hanya menumpuk
                   pengetahuan.
                 </span>
               </li>
-              <li className="mb-4 flex items-center">
-                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
-                <span>Terdistraksi oleh banyaknya pilihan belajar.</span>
+              <li className="mb-4 grid grid-cols-[auto_1fr] items-center gap-2">
+                <ShieldExclamationIcon
+                  className="text-sm mr-4 text-purple-500"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <span className="">
+                  Terdistraksi oleh banyaknya pilihan belajar.
+                </span>
               </li>
-              <li className="mb-4 flex items-center">
-                <ShieldExclamationIcon className="h-6 w-6 mr-4 text-purple-500" />
-                <span>Kehilangan semangat karena tidak ada hasil nyata.</span>
+              <li className="mb-4 grid grid-cols-[auto_1fr] items-center gap-2">
+                <ShieldExclamationIcon
+                  className="text-sm mr-4 text-purple-500"
+                  style={{ width: "24px", height: "24px" }}
+                />
+                <span className="">
+                  Kehilangan semangat karena tidak ada hasil nyata.
+                </span>
               </li>
             </ul>
             <p className="mt-6 text-md md:text-lg text-center italic text-gray-300">
@@ -96,12 +117,12 @@ const home = () => {
         {/* Pillars Section */}
         <section className="py-16 md:py-24 bg-gradient-to-r from-gray-700 to-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               4 Pilar Pembelajaran Utama di Nexterra
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-[24px] font-bold mb-2 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent ">
                   📘 Insight Series
                 </h3>
                 <p className="text-md">
@@ -110,7 +131,7 @@ const home = () => {
                 </p>
               </div>
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-[24px] font-bold mb-2 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
                   🎓 Digital Mastery
                 </h3>
                 <p className="text-md">
@@ -119,14 +140,18 @@ const home = () => {
                 </p>
               </div>
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-2">💻 GrowthLab</h3>
+                <h3 className="text-[24px] font-bold mb-2 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+                  💻 GrowthLab
+                </h3>
                 <p className="text-md">
                   Ecourse mendalam dengan modul terstruktur, latihan, dan studi
                   kasus untuk pertumbuhan nyata.
                 </p>
               </div>
               <div className="bg-gray-800 rounded-lg p-6">
-                <h3 className="text-xl font-semibold mb-2">👥 Action Lab</h3>
+                <h3 className="text-[24px] font-bold mb-2 bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent">
+                  👥 Action Lab
+                </h3>
                 <p className="text-md">
                   Private class eksklusif untuk bimbingan intensif, personal,
                   dan penerapan langsung.
@@ -137,24 +162,16 @@ const home = () => {
               Di Nexterra, Anda tidak hanya belajar. Anda bertumbuh, membangun,
               dan bergerak.
             </p>
-          </div>
-        </section>
-        <section className="py-20 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
-          <div className="container mx-auto">
-            <p className="text-2xl text-gray-400 mb-8 font-bold">
-              {" "}
-              Di Nexterra, Anda tidak hanya belajar. <br />
-              Anda bertumbuh, membangun, dan bergerak.
-            </p>
-            <h2 className="text-3xl font-semibold mb-6">
+            <p className="mt-8 text-lg text-center">
               Mari ubah wawasan jadi aksi, ubah potensi jadi pencapaian.
-            </h2>
+            </p>
           </div>
         </section>
+
         {/* Value Proposition Section */}
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Nexterra: Tempat Ilmu Bekerja, Bukan Hanya Disimpan
             </h2>
             <p className="text-lg mb-6 text-center text-gray-300">
@@ -182,7 +199,7 @@ const home = () => {
                   alt="Terstruktur"
                   className="w-28 h-20 mb-4"
                 />
-                <span className="font-bold text-lg mb-1">
+                <span className="font-bold text-xl mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Terstruktur, bukan acak-acakan.
                 </span>
                 <p className="text-sm">
@@ -192,7 +209,7 @@ const home = () => {
               </div>
               <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
                 <img src={undraw2} alt="Aplikatif" className="w-28 h-20 mb-4" />
-                <span className="font-bold text-lg mb-1">
+                <span className="font-bold text-xl mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Aplikatif, bukan hanya teoritis.
                 </span>
                 <p className="text-sm">
@@ -202,7 +219,7 @@ const home = () => {
               </div>
               <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
                 <img src={undraw3} alt="Sederhana" className="w-28 h-20 mb-4" />
-                <span className="font-bold text-lg mb-1">
+                <span className="font-bold text-xl mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Sederhana tapi tajam.
                 </span>
                 <p className="text-sm">
@@ -212,7 +229,7 @@ const home = () => {
               </div>
               <div className="bg-gray-800 rounded-md p-6 text-center text-white flex flex-col items-center w-full md:w-1/2 lg:w-1/4 h-full min-h-[80px]">
                 <img src={undraw4} alt="Fleksibel" className="w-28 h-20 mb-4" />
-                <span className="font-bold text-lg mb-1">
+                <span className="font-bold text-xl mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Fleksibel tapi tetap intens.
                 </span>
                 <p className="text-sm">
@@ -221,7 +238,7 @@ const home = () => {
                 </p>
               </div>
             </div>
-            <p className="mt-6 text-lg text-center text-gray-300">
+            <p className="px-8 mt-6 text-lg text-center text-gray-300">
               Lewat empat jalur utama pembelajaran,{" "}
               <span className="font-bold text-white">
                 —Insight Series, Digital Mastery, GrowthLab, dan Action Lab—
@@ -235,7 +252,7 @@ const home = () => {
                 bertindak lebih cepat.
               </span>
             </p>
-            <p className="mt-6 text-lg text-center text-gray-300">
+            <p className="px-8 mt-6 text-lg text-center text-gray-300">
               Ini bukan soal menjadi yang paling pintar. <br />
               Ini tentang menjadi yang paling siap{" "}
               <span className="font-bold text-white">
@@ -250,7 +267,7 @@ const home = () => {
           </div>
         </section>
         {/* Call to Action Section */}
-        <section className="py-20 md:py-28 bg-gradient-to-tr from-purple-700 to-gray-700">
+        <section className="py-20 md:py-28 bg-gradient-to-tr from-purple-700 to-gray-700 px-8">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               Mulai Perjalanan Belajar yang Berdampak Sekarang!
@@ -269,19 +286,19 @@ const home = () => {
               dipertanggungjawabkan.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mx-auto mb-5">
-              <span className="w-[400px] bg-purple-100 rounded-full py-4 px-8 text-purple-700 font-bold text-lg text-center">
+              <span className="w-[400px] mx-8 bg-purple-100 rounded-full py-4 px-8 text-purple-700 font-bold text-lg text-center">
                 Ingin strategi cepat & padat? <br />
                 Mulai dari 📘 Insight Series.
               </span>
-              <span className="w-[400px] bg-green-100 rounded-full py-4 px-8 text-green-700 font-bold text-lg text-center">
+              <span className="w-[400px] mx-8 bg-green-100 rounded-full py-4 px-8 text-green-700 font-bold text-lg text-center">
                 Ingin diskusi langsung dengan praktisi? <br /> Ikuti 🎓 Digital
                 Mastery.
               </span>
-              <span className=" w-[400px] bg-yellow-100 rounded-full py-4 px-8 text-yellow-700 font-bold text-lg text-center">
+              <span className=" w-[400px] mx-8 bg-yellow-100 rounded-full py-4 px-8 text-yellow-700 font-bold text-lg text-center">
                 Siap mendalami skill secara sistematis? <br /> Masuk ke 💻
                 GrowthLab.
               </span>
-              <span className="w-[400px] bg-red-100 rounded-full py-4 px-8 text-red-700 font-bold text-lg text-center">
+              <span className="w-[400px] mx-8 bg-red-100 rounded-full py-4 px-8 text-red-700 font-bold text-lg text-center">
                 Butuh arahan langsung & personal? <br /> Pilih 👥 Action Lab.
               </span>
               {/* Tambahkan badge/label lainnya di sini */}
@@ -305,55 +322,55 @@ const home = () => {
           </div>
         </section>
         {/* Keunggulan Nexterra */}
-        <section className="p-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <section className="p-8">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             Kenapa Nexterra?
           </h1>
           <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Bisa Mulai dari Nol
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-100">
                 Nexterra percaya semua orang bisa berkembang, dari mana pun
                 titik awalmu. Kami hadir untuk menemani setiap langkah kecil
                 menuju sukses.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Ilmu Praktis, Bukan Hanya Teori
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-100">
                 Semua eBook, webinar, dan ecourse kami dirancang untuk langsung
                 dipraktikkan dalam bisnis dan kariermu.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Akses Mudah dan Gratis
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-100">
                 Belajar seharusnya tidak ribet dan tidak mahal. Di Nexterra,
                 banyak materi penting yang bisa kamu akses gratis atau dengan
                 biaya sangat terjangkau.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Tumbuh Bersama Komunitas
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-100">
                 Kami tidak hanya menyediakan materi, tapi juga membangun
                 komunitas pembelajar dan pelaku usaha untuk saling mendukung dan
                 bertumbuh.
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2">
+              <h3 className="text-2xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Langkah Kecil, Perubahan Besar
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-100">
                 Kami percaya bahwa perubahan besar dimulai dari satu keputusan
                 sederhana: mau belajar hari ini. Nexterra ada untuk mempercepat
                 perjalananmu.
@@ -363,7 +380,7 @@ const home = () => {
         </section>
         {/* FAQ Section */}
         <FAQ />
-        <section className="py-20 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
+        <section className="px-16 py-8 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
           <div className="container mx-auto">
             <h2 className="text-3xl font-semibold mb-6">
               “An investment in knowledge pays the best interest.”
@@ -372,9 +389,9 @@ const home = () => {
           </div>
         </section>
         {/* Testimonials Section */}
-        <section className="py-16">
+        <section className="p-8">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-semibold text-center mb-8">
+            <h2 className="text-[36px] font-semibold text-center mb-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Apa Kata Mereka ?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-5">
@@ -456,10 +473,11 @@ const home = () => {
           </div>
         </section>
 
-        <section className="product bg-gradient-to-br from-purple-800 to-gray-600">
+        {/* Feature */}
+        <section className="product bg-gradient-to-br from-purple-800 to-gray-600 p-8">
           <div className="container mx-auto px-4">
             <section className="py-8">
-              <h2 className="text-2xl font-bold text-white mb-6">
+              <h2 className="text-4xl font-bold text-white mb-6">
                 Insight Series
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -689,9 +707,9 @@ const home = () => {
         </section>
 
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-purple-800 to-gray-600 py-20 md:py-32">
+        <section className="bg-gradient-to-br from-purple-800 to-gray-600 p-8 md:py-32">
           <div className="container mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold mb-6">
               Belajar dengan Berani. Bertindak Nyata. <br />
               Tumbuh ke Depan.
             </h1>
@@ -701,20 +719,20 @@ const home = () => {
           </div>
         </section>
         {/* Steps to Success Section */}
-        <section className="py-16 md:py-24 bg-gray-900">
+        <section className="p-8 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               6 Langkah Belajar Terarah di Nexterra
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Kolom Kiri (1-3) */}
               <div className="order-1">
-                <div className="flex items-start mb-6">
+                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     1
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-white">
+                    <h3 className="text-xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                       Kenali Tujuan & Kebutuhan Anda
                     </h3>
                     <p className="text-md text-gray-300">
@@ -723,12 +741,12 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start mb-6">
+                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     2
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-white">
+                    <h3 className="text-xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                       Pilih Jalur Pembelajaran yang Tepat
                     </h3>
                     <p className="text-md text-gray-300">
@@ -737,12 +755,12 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     3
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-white">
+                    <h3 className="text-xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                       Akses Materi Fleksibel
                     </h3>
                     <p className="text-md text-gray-300">
@@ -755,12 +773,12 @@ const home = () => {
 
               {/* Kolom Kanan (4-6) */}
               <div className="order-2">
-                <div className="flex items-start mb-6">
+                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     4
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-white">
+                    <h3 className="text-xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                       Terapkan Ilmu Secara Bertahap
                     </h3>
                     <p className="text-md text-gray-300">
@@ -769,12 +787,12 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start mb-6">
+                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     5
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-white">
+                    <h3 className="text-xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                       Dapatkan Feedback & Arahan Praktis
                     </h3>
                     <p className="text-md text-gray-300">
@@ -783,12 +801,12 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start">
+                <div className="flex items-start grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     6
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-1 text-white">
+                    <h3 className="text-xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                       Review & Konsisten Bertumbuh
                     </h3>
                     <p className="text-md text-gray-300">
@@ -802,17 +820,19 @@ const home = () => {
           </div>
         </section>
         {/* How It Works Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-gray-700 to-gray-900">
+        <section className="p-8 md:py-24 bg-gradient-to-r from-gray-700 to-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
-              Mulai Belajar di Nexterra - Ini Langkahnya!
+            <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              Mulai Belajar di Nexterra - <br /> Ini Langkahnya!
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-gray-800 rounded-lg p-6 text-center">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold text-lg">
                   1
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Buat Akun</h3>
+                <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  Buat Akun
+                </h3>
                 <p className="text-md">
                   Daftar gratis. Proses cepat, langsung siap eksplorasi!
                 </p>
@@ -821,7 +841,9 @@ const home = () => {
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold text-lg">
                   2
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Lengkapi Profil</h3>
+                <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  Lengkapi Profil
+                </h3>
                 <p className="text-md">
                   Isi data singkat agar kami bisa menyarankan jalur belajar
                   terbaik.
@@ -831,7 +853,9 @@ const home = () => {
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold text-lg">
                   3
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Pilih Program</h3>
+                <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  Pilih Program
+                </h3>
                 <p className="text-md">
                   Jelajahi Insight Series, Digital Mastery, GrowthLab, atau
                   Action Lab.
@@ -841,7 +865,9 @@ const home = () => {
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold text-lg">
                   4
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Klik Gabung</h3>
+                <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  Klik Gabung
+                </h3>
                 <p className="text-md">
                   Satu klik untuk mulai upgrade skill dan wawasan kamu.
                 </p>
@@ -850,7 +876,7 @@ const home = () => {
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold text-lg">
                   5
                 </div>
-                <h3 className="text-lg font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Selesaikan Pembayaran
                 </h3>
                 <p className="text-md">
@@ -861,7 +887,9 @@ const home = () => {
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 font-semibold text-lg">
                   6
                 </div>
-                <h3 className="text-lg font-semibold mb-2">Mulai Belajar</h3>
+                <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  Mulai Belajar
+                </h3>
                 <p className="text-md">
                   Nikmati materi eksklusif dan terapkan langsung!
                 </p>
@@ -872,13 +900,13 @@ const home = () => {
         {/* About Nexterra Section */}
         <section className="py-16 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Tentang Nexterra
             </h2>
-            <p className="text-lg mb-6 text-center italic">
+            <p className="text-xl mb-6 text-center italic">
               Learn Bold. Act Real. Grow Forward.
             </p>
-            <p className="text-lg mb-6">
+            <p className="text-lg mb-6 p-8">
               Nexterra bukan sekadar platform belajar—kami adalah ekosistem
               pertumbuhan untuk para penggerak perubahan. Di tengah dunia yang
               terus berubah cepat, Nexterra hadir sebagai jembatan antara
@@ -886,7 +914,7 @@ const home = () => {
               dan strategi yang relevan untuk menjawab tantangan hari ini dan
               masa depan.
             </p>
-            <p className="text-lg">
+            <p className="text-lg p-8">
               Kami percaya, pembelajaran tidak harus rumit, tapi harus
               berdampak. Kami rancang setiap program dengan satu tujuan: membuat
               Anda berkembang secara terarah, terukur, dan berani bergerak.
@@ -894,27 +922,29 @@ const home = () => {
           </div>
         </section>
         {/* Program Overview Section */}
-        <section className="py-16 md:py-24 bg-gradient-to-r from-gray-700 to-gray-900">
+        <section className="p-8 md:py-24 bg-gradient-to-r from-gray-700 to-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Apa yang Kami Tawarkan
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center">
+              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   📘
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-1">Insight Series</h3>
+                  <h3 className="text-2xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    Insight Series
+                  </h3>
                   <p className="text-md">Materi singkat untuk insight cepat.</p>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center">
+              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   🎓
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-1">
+                  <h3 className="text-2xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                     Digital Mastery
                   </h3>
                   <p className="text-md">
@@ -922,23 +952,27 @@ const home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center">
+              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   💻
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-1">GrowthLab</h3>
+                  <h3 className="text-2xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    GrowthLab
+                  </h3>
                   <p className="text-md">
                     Ecourse mendalam untuk skill yang terstruktur.
                   </p>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center">
+              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   👥
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-1">Action Lab</h3>
+                  <h3 className="text-2xl font-semibold mb-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                    Action Lab
+                  </h3>
                   <p className="text-md">
                     Ruang eksekusi untuk menerapkan ilmu secara langsung.
                   </p>
@@ -948,17 +982,29 @@ const home = () => {
           </div>
         </section>
         {/* Target Audience Section */}
-        <section className="py-16 md:py-24 bg-gray-900">
+        <section className="p-8 md:py-24 bg-gray-900">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Kami Hadir Untuk Anda
             </h2>
             <p className="text-lg text-center">
-              Baik Anda seorang <span className="font-semibold">pengusaha</span>
-              , <span className="font-semibold">profesional</span>,{" "}
-              <span className="font-semibold">mahasiswa</span>, atau{" "}
-              <span className="font-semibold">kreator mandiri</span> yang haus
-              kemajuan, Nexterra adalah tempat Anda bertumbuh.
+              Baik Anda seorang{" "}
+              <span className="font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                pengusaha
+              </span>
+              ,{" "}
+              <span className="font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                profesional
+              </span>
+              ,{" "}
+              <span className="font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                mahasiswa
+              </span>
+              , atau{" "}
+              <span className="font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                kreator mandiri
+              </span>{" "}
+              yang haus kemajuan, Nexterra adalah tempat Anda bertumbuh.
             </p>
             <p className="mt-6 text-lg text-center">
               Ini adalah tempat Anda membentuk versi terbaik dari diri Anda.
@@ -986,7 +1032,7 @@ const home = () => {
                 <cite className="text-md text-gray-400">
                   - Leonardo da Vinci
                 </cite>
-                <p className="text-lg mt-6 text-gray-300 leading-relaxed">
+                <p className="text-lg mt-6 text-white leading-relaxed">
                   Beliau mengingatkan kita bahwa belajar adalah kekuatan tak
                   terbatas yang tidak akan pernah melelahkan pikiran kita,
                   justru malah akan memperkuatnya. Jika Anda merasa terjebak
@@ -995,10 +1041,10 @@ const home = () => {
                   belajar lebih, berpikir lebih, dan melampaui apa yang Anda
                   kira mungkin.
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
+                <h3 className="text-2xl font-semibold mt-6 mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Kenapa harus mulai dari sekarang?
                 </h3>
-                <p className="text-lg mb-4 text-gray-300 leading-relaxed">
+                <p className="text-lg mb-4 text-white leading-relaxed">
                   Jangan biarkan ketakutan atau keraguan menghalangi Anda untuk
                   mengeksplorasi potensi Anda. Pikiran Anda tidak akan pernah
                   lelah belajar, justru Anda akan menemukan kekuatan baru setiap
@@ -1006,20 +1052,20 @@ const home = () => {
                   Anda yang siap melangkah keluar dari zona nyaman dan mengubah
                   masa depan Anda.
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
+                <h3 className="text-2xl font-semibold mt-6 mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Tidak Ada Batasan untuk Belajar
                 </h3>
-                <p className="text-lg mb-4 text-gray-300 leading-relaxed">
+                <p className="text-lg mb-4 text-white leading-relaxed">
                   Di Nexterra, kami tidak hanya mengajarkan Anda teori, tapi
                   memberikan Anda tantangan nyata untuk diterapkan. Kami percaya
                   bahwa belajar adalah sebuah proses yang memperkuat otak, dan
                   setiap pelajaran adalah kesempatan untuk berkembang lebih
                   jauh. Apakah Anda siap untuk menguji kemampuan Anda?
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
+                <h3 className="text-2xl font-semibold mt-6 mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Pikiran Anda Hanya Akan Semakin Kuat
                 </h3>
-                <p className="text-lg mb-4 text-gray-300 leading-relaxed">
+                <p className="text-lg mb-4 text-white leading-relaxed">
                   Setiap keterampilan yang Anda pelajari di Nexterra bukan hanya
                   untuk menambah wawasan—ini adalah pelatihan mental yang akan
                   mengasah cara berpikir dan kemampuan Anda untuk memecahkan
@@ -1028,10 +1074,10 @@ const home = () => {
                   Anda akan dipersiapkan untuk melewati tantangan-tantangan
                   tersebut dengan kekuatan yang tak terbatas.
                 </p>
-                <h3 className="text-xl font-semibold mt-6 mb-2 text-white">
+                <h3 className="text-2xl font-semibold mt-6 mb-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                   Siap untuk Menjadi Lebih Baik?
                 </h3>
-                <p className="text-lg mb-6 text-gray-300 leading-relaxed">
+                <p className="text-lg mb-6 text-white leading-relaxed">
                   Jika Anda berpikir bahwa Anda sudah tahu segalanya, mungkin
                   ini saatnya untuk mencoba sesuatu yang baru. Belajar bukan
                   hanya tentang menambah informasi, tapi tentang menantang diri
@@ -1047,9 +1093,9 @@ const home = () => {
           </div>
         </section>
         {/* Call to Action Section */}
-        <section className="py-20 bg-gradient-to-br from-black to-gray-800 text-center">
+        <section className="p-8 bg-gradient-to-br from-black to-gray-800 text-center">
           <div className="container mx-auto">
-            <h2 className="text-3xl font-semibold mb-6">
+            <h2 className="text-3xl font-semibold mb-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
               Tertarik belajar lebih banyak dan berkembang?
             </h2>
             <p className="text-lg text-gray-400 mb-8">

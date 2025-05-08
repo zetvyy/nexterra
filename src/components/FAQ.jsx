@@ -56,15 +56,15 @@ const FAQ = () => {
   return (
     <section
       id="FAQ"
-      className="max-w-[1200px] mx-auto flex flex-col py-[70px] px-[20px] md:px-[100px]"
+      className="max-w-[1200px] mx-auto flex flex-col py-[70px] px-8"
     >
       <div className="flex justify-between items-start lg:items-center flex-col lg:flex-row gap-[50px] lg:gap-0">
         <div className="flex flex-col gap-[30px]">
           <div className="flex flex-col">
-            <h2 className="font-bold text-white text-[36px] leading-[52px]">
+            <h2 className="font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-[36px] leading-[52px]">
               Frequently Asked Question
             </h2>
-            <p className="text-lg text-gray-400">
+            <p className="text-lg text-white font-semibold">
               Waktunya upgrade skills tanpa batas!
             </p>
           </div>

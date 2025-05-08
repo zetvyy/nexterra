@@ -7,7 +7,7 @@ import Ebook5 from "../assets/img/Ebook-5.jpeg";
 
 const ProductCard = ({ title, description, type, price, image, trailer }) => (
   <div className="bg-white rounded-lg shadow-md p-6">
-    <h3 className="text-xl font-semibold text-purple-800 mb-2">{title}</h3>
+    <h3 className="text-[36px] font-semibold text-purple-800 mb-2">{title}</h3>
     {type === "E-book" && image && (
       <img src={image} alt={title} className="w-full h-auto rounded-md mb-4" />
     )}
@@ -40,7 +40,7 @@ const ProductCard = ({ title, description, type, price, image, trailer }) => (
 
 const ProductSection = ({ title, products }) => (
   <section className="py-8">
-    <h2 className="text-2xl font-bold text-white mb-6">{title}</h2>
+    <h2 className="text-[36px] font-bold text-white mb-6">{title}</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {products.map((product, index) => (
         <ProductCard key={index} {...product} />
@@ -144,7 +144,7 @@ const feature = () => {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-purple-800 to-gray-600 min-h-screen py-10">
+      <div className="bg-gradient-to-r from-purple-800 to-gray-600 min-h-screen p-8">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold text-white text-center mb-8">
             4 Pilar pembelajaran utama di Nexterra
