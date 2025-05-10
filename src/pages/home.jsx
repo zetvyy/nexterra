@@ -12,6 +12,7 @@ import undraw4 from "../assets/img/undraw4.svg";
 import Ebook1 from "../assets/img/Ebook-1.jpeg";
 import Ebook4 from "../assets/img/Ebook-4.jpeg";
 import Ebook5 from "../assets/img/Ebook-5.jpeg";
+import benjamin from "../assets/img/benjamin.png";
 
 const home = () => {
   return (
@@ -34,7 +35,7 @@ const home = () => {
               <p className="mb-4">
                 Di tengah derasnya informasi digital, hanya mereka yang mampu
                 bertindaklah yang akan melangkah lebih jauh. Nexterra hadir
-                untuk Anda—pengusaha yang ingin scale-up, karyawan yang ingin
+                untuk Anda pengusaha yang ingin scale-up, karyawan yang ingin
                 naik level, mahasiswa yang haus skill masa depan, atau kreator
                 yang ingin membangun ekosistem digital yang kuat.
               </p>
@@ -108,7 +109,7 @@ const home = () => {
               Di sisi lain, dunia terus bergerak. <br />
               Bisnis berubah, teknologi berkembang, dan kebutuhan pasar makin
               kompleks. Tanpa aksi nyata dan hasil konkret, pengetahuan hanya
-              akan jadi tumpukan catatan—bukan alat untuk bertumbuh.
+              akan jadi tumpukan catatan, bukan alat untuk bertumbuh.
             </p>
           </div>
         </section>
@@ -239,7 +240,7 @@ const home = () => {
             <p className="px-8 mt-6 text-lg text-center text-gray-300">
               Lewat empat jalur utama pembelajaran,{" "}
               <span className="font-bold text-white">
-                —Insight Series, Digital Mastery, GrowthLab, dan Action Lab—
+                Insight Series, Digital Mastery, GrowthLab, dan Action Lab
               </span>{" "}
               kami membangun ekosistem yang memudahkan Anda bukan hanya{" "}
               <span className="font-bold text-white">
@@ -267,7 +268,7 @@ const home = () => {
         {/* Call to Action Section */}
         <section className="py-20 md:py-28 bg-gradient-to-tr from-purple-700 to-gray-700 px-8">
           <div className="container mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-300 to-pink-300 bg-clip-text text-transparent">
               Mulai Perjalanan Belajar yang Berdampak Sekarang!
             </h2>
             <p className="text-lg md:text-xl mb-8">
@@ -280,7 +281,7 @@ const home = () => {
                 menyediakan jalur yang tepat, sumber belajar yang relevan,
               </span>{" "}
               dan <span className="font-bold">dukungan nyata</span> agar Anda
-              bisa naik level—dengan cara yang terukur, bertahap, dan bisa
+              bisa naik level dengan cara yang terukur, bertahap, dan bisa
               dipertanggungjawabkan.
             </p>
             <div className="flex flex-wrap justify-center gap-4 mx-auto mb-5">
@@ -314,7 +315,7 @@ const home = () => {
               </button>
             </Link>
             <p className="text-lg md:text-xl mb-8">
-              Karena belajar seharusnya tidak bikin ragu—tapi membuat Anda siap
+              Karena belajar seharusnya tidak bikin ragu tapi membuat Anda siap
               bergerak.
             </p>
           </div>
@@ -378,12 +379,23 @@ const home = () => {
         </section>
         {/* FAQ Section */}
         <FAQ />
-        <section className="px-16 py-8 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
-          <div className="container mx-auto">
-            <h2 className="text-3xl font-semibold mb-6">
-              “An investment in knowledge pays the best interest.”
-            </h2>
-            <p className="text-lg text-gray-400 mb-8">— Benjamin Franklin</p>
+        <section className="py-8 bg-gradient-to-br from-purple-800 to-gray-600 text-center">
+          <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="md:col-span-1 flex justify-center p-8">
+              <img
+                src={benjamin}
+                alt="Benjamin Franklin"
+                className="max-w-full h-auto object-contain"
+              />
+            </div>
+            <div className="md:col-span-2 px-8">
+              <h2 className="text-2xl md:text-3xl font-semibold mb-4 md:mb-6">
+                “An investment in knowledge pays the best interest.”
+              </h2>
+              <p className="text-md md:text-lg text-gray-400">
+                — Benjamin Franklin
+              </p>
+            </div>
           </div>
         </section>
         {/* Testimonials Section */}
@@ -479,8 +491,8 @@ const home = () => {
                 Insight Series
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-2">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-blue-300 mb-2">
                     Mengenal Market dalam Marketing
                   </h3>
                   <img
@@ -488,7 +500,7 @@ const home = () => {
                     alt="Mengenal Market dalam Marketing"
                     className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Kamu pikir marketing itu soal desain keren dan caption kece?
                     Salah besar. Semua jadi sia-sia kalau kamu belum ngerti satu
                     hal paling penting: market. Mau tahu kenapa banyak bisnis
@@ -496,16 +508,16 @@ const home = () => {
                     sini..
                   </p>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">E-book</span>
-                    <span className="text-purple-800 font-bold">FREE</span>
+                    <span className="text-sm text-gray-300">E-book</span>
+                    <span className="text-blue-300 font-bold">FREE</span>
                   </div>
-                  <button className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-blue-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-2">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-blue-300 mb-2">
                     Skill yang Nggak Diajarkan di Kampus tapi Dicari Perusahaan
                   </h3>
                   <img
@@ -513,7 +525,7 @@ const home = () => {
                     alt="Skill yang Nggak Diajarkan di Kampus tapi Dicari Perusahaan"
                     className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Kuliah bertahun-tahun, skripsi berdarah-darah... tapi pas
                     lulus malah bingung kerja di mana? Ternyata, ada skill
                     penting yang nggak pernah diajarin kampus tapi jadi incaran
@@ -521,16 +533,16 @@ const home = () => {
                     upgrade skill-mu sekarang!
                   </p>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">E-book</span>
-                    <span className="text-purple-800 font-bold">FREE</span>
+                    <span className="text-sm text-gray-300">E-book</span>
+                    <span className="text-blue-300 font-bold">FREE</span>
                   </div>
-                  <button className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-blue-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
 
-                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-2">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-blue-300 mb-2">
                     Usaha Jalan tapi Ilegal: Bahaya yang Harus Dihindari
                   </h3>
                   <img
@@ -538,7 +550,7 @@ const home = () => {
                     alt="Usaha Jalan tapi Ilegal: Bahaya yang Harus Dihindari"
                     className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Kelihatannya bisnis kamu aman, tapi gimana kalau ternyata
                     statusnya... ilegal? Banyak pelaku usaha nggak sadar mereka
                     sedang berjalan di jalur abu-abu. Jangan sampai kamu salah
@@ -546,10 +558,10 @@ const home = () => {
                     waspadai sebelum terlambat!
                   </p>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">E-book</span>
-                    <span className="text-purple-800 font-bold">FREE</span>
+                    <span className="text-sm text-gray-300">E-book</span>
+                    <span className="text-blue-300 font-bold">FREE</span>
                   </div>
-                  <button className="mt-auto bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                  <button className="mt-auto bg-blue-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
                     Beli Sekarang
                   </button>
                 </div>
@@ -561,8 +573,8 @@ const home = () => {
                 Digital Mastery
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-semibold text-green-800 mb-2">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-green-300 mb-2">
                     Strategi Pemasaran Digital 2024
                   </h3>
                   {/* Jika ada gambar untuk Webinar */}
@@ -571,13 +583,13 @@ const home = () => {
                     alt="Strategi Pemasaran Digital 2024"
                     className="w-full h-48 object-cover rounded-md mb-4 flex-grow"
                   />
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Webinar pelatihan tentang tren dan strategi pemasaran
                     digital terkini.
                   </p>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">Webinar</span>
-                    <span className="text-green-800 font-bold">
+                    <span className="text-sm text-gray-300">Webinar</span>
+                    <span className="text-green-300 font-bold">
                       Rp {`99000`}
                     </span>
                   </div>
@@ -592,8 +604,8 @@ const home = () => {
             <section className="py-8">
               <h2 className="text-2xl font-bold text-white mb-6">Growth Lab</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-semibold text-yellow-800 mb-2">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-yellow-300 mb-2">
                     Mastering Tailwind CSS dalam 7 Hari
                   </h3>
                   {/* Jika ada trailer untuk E-course */}
@@ -606,13 +618,13 @@ const home = () => {
                       allowFullScreen
                     ></iframe>
                   </div>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-300 mb-4">
                     Kursus online intensif untuk menguasai Tailwind CSS dengan
                     cepat.
                   </p>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">E-course</span>
-                    <span className="text-yellow-800 font-bold">
+                    <span className="text-sm text-gray-300">E-course</span>
+                    <span className="text-yellow-300 font-bold">
                       Rp {`149000`}
                     </span>
                   </div>
@@ -627,20 +639,20 @@ const home = () => {
             <section className="py-8">
               <h2 className="text-2xl font-bold text-white mb-6">Action Lab</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6 flex flex-col h-full">
-                  <h3 className="text-xl font-semibold text-red-800 mb-2">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                  <h3 className="text-xl font-semibold text-red-300 mb-2">
                     Private Class Eksklusif
                   </h3>
                   {/* Mungkin tidak ada gambar/trailer khusus untuk private class */}
                   <div className="flex-grow">
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-300 mb-4">
                       lorem ipsum dolor sit amet parmet sir dolor paramet sir
                       tulur
                     </p>
                   </div>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-sm text-gray-500">Private Class</span>
-                    <span className="text-red-800 font-bold">
+                    <span className="text-sm text-gray-300">Private Class</span>
+                    <span className="text-red-300 font-bold">
                       Rp {`129000`}
                     </span>
                   </div>
@@ -856,7 +868,7 @@ const home = () => {
               Learn Bold. Act Real. Grow Forward.
             </p>
             <p className="text-lg mb-6 p-8">
-              Nexterra bukan sekadar platform belajar—kami adalah ekosistem
+              Nexterra bukan sekadar platform belajar, kami adalah ekosistem
               pertumbuhan untuk para penggerak perubahan. Di tengah dunia yang
               terus berubah cepat, Nexterra hadir sebagai jembatan antara
               pengetahuan dan aksi nyata, membekali Anda dengan skill, mindset,
@@ -1058,7 +1070,7 @@ const home = () => {
           </div>
         </section>
         {/* Footer */}
-        <footer className="py-8 text-center text-gray-500">
+        <footer className="py-8 text-center text-gray-300">
           <p>&copy; 2025 Nexterra. All rights reserved.</p>
         </footer>
       </div>
