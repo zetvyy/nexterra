@@ -4,6 +4,7 @@ import Home from "../pages/home";
 import Feature from "../pages/feature";
 import AuthPage from "../pages/auth";
 import LearningPath from "../pages/learning";
+import PaymentPage from "../pages/paymentPage";
 
 const RoutePath = () => {
   return (
@@ -16,7 +17,7 @@ const RoutePath = () => {
           path="/course/:courseId/learn/:courseVideoId"
           element={<LearningPath />}
         />
-        {/* <Route path="/learning" element={<LearningPath />} /> */}
+        <Route path="/payment" element={<PaymentPage />} />
       </Routes>
     </Router>
   );
