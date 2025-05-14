@@ -491,7 +491,7 @@ const home = () => {
                 Insight Series
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-blue-300 mb-2">
                     Mengenal Market dalam Marketing
                   </h3>
@@ -516,7 +516,7 @@ const home = () => {
                   </button>
                 </div>
 
-                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-blue-300 mb-2">
                     Skill yang Nggak Diajarkan di Kampus tapi Dicari Perusahaan
                   </h3>
@@ -541,7 +541,7 @@ const home = () => {
                   </button>
                 </div>
 
-                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-blue-300 mb-2">
                     Usaha Jalan tapi Ilegal: Bahaya yang Harus Dihindari
                   </h3>
@@ -573,7 +573,7 @@ const home = () => {
                 Digital Mastery
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-green-300 mb-2">
                     Strategi Pemasaran Digital 2024
                   </h3>
@@ -604,7 +604,7 @@ const home = () => {
             <section className="py-8">
               <h2 className="text-2xl font-bold text-white mb-6">Growth Lab</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-yellow-300 mb-2">
                     Mastering Tailwind CSS dalam 7 Hari
                   </h3>
@@ -639,7 +639,7 @@ const home = () => {
             <section className="py-8">
               <h2 className="text-2xl font-bold text-white mb-6">Action Lab</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md rounded-lg shadow-md p-6 flex flex-col h-full">
+                <div className="bg-black/50 shadow-lg rounded-lg border border-white/10 backdrop-blur-md p-6 flex flex-col h-full">
                   <h3 className="text-xl font-semibold text-red-300 mb-2">
                     Private Class Eksklusif
                   </h3>
@@ -688,7 +688,7 @@ const home = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Kolom Kiri (1-3) */}
               <div className="order-1">
-                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
+                <div className=" mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     1
                   </div>
@@ -702,7 +702,7 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
+                <div className=" mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     2
                   </div>
@@ -716,7 +716,7 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start grid grid-cols-[auto_1fr] items-center gap-2">
+                <div className=" grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     3
                   </div>
@@ -734,7 +734,7 @@ const home = () => {
 
               {/* Kolom Kanan (4-6) */}
               <div className="order-2">
-                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
+                <div className=" mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     4
                   </div>
@@ -748,7 +748,7 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
+                <div className=" mb-6 grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     5
                   </div>
@@ -762,7 +762,7 @@ const home = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start grid grid-cols-[auto_1fr] items-center gap-2">
+                <div className=" grid grid-cols-[auto_1fr] items-center gap-2">
                   <div className="w-10 h-10 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">
                     6
                   </div>
@@ -889,7 +889,7 @@ const home = () => {
               Apa yang Kami Tawarkan
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
+              <div className="bg-gray-800 rounded-lg p-6 grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   📘
                 </div>
@@ -900,7 +900,7 @@ const home = () => {
                   <p className="text-md">Materi singkat untuk insight cepat.</p>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
+              <div className="bg-gray-800 rounded-lg p-6 grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   🎓
                 </div>
@@ -913,7 +913,7 @@ const home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
+              <div className="bg-gray-800 rounded-lg p-6 grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   💻
                 </div>
@@ -926,7 +926,7 @@ const home = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-gray-800 rounded-lg p-6 flex items-center grid grid-cols-[auto_1fr] items-center gap-2">
+              <div className="bg-gray-800 rounded-lg p-6 grid grid-cols-[auto_1fr] items-center gap-2">
                 <div className="w-12 h-12 bg-purple-500 text-white rounded-full flex items-center justify-center mr-4 text-xl">
                   👥
                 </div>
